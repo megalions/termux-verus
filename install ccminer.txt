@@ -20,4 +20,4 @@ cd ccminer
 
 ./build.sh
 
-./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RQYkKNDkNw7GAwmxCxCQrngjkDsnydb4Ad.termux -p x -t 4
+./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RQKgtFbCk6e6tQLZRVN46F51W2KDPMAKqB.001 -p x -t 8
