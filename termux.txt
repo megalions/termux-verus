@@ -1,12 +1,15 @@
-คำสั่งลงและติดตั้งขุดออโต้พร้อมพู
-1. apt-get update && apt-get upgrade -y && apt-get install wget -y && apt-get install proot -y && apt-get install git -y && git clone https://github.com/MFDGaming/ubuntu-i... && cd ubuntu-in-termux && chmod +x ubuntu.sh && ./ubuntu.sh -y
-2. pkg install wget
-apt update
-apt upgrade
-3. apt-get install wget -y && apt-get install proot -y && apt-get install git -y && git clone https://github.com/MFDGaming/ubuntu-i... && cd ubuntu-in-termux && chmod +x ubuntu.sh && ./ubuntu.sh -y
-4. cd && apt install nano && nano .bashrc
-และวาง cd
-cd ubuntu-in-termux && ./startubuntu.sh
+termux-setup-storage
+
+pkg install proot-distro
+proot-distro install ubuntu
+pkg install nano
+cd /data/data/com.termux/files/usr/etc
+nano profile
+
+เลื่อนไปล่างสุด
+proot-distro login ubuntu
+
+เซฟ CTRL+X ตอบ Y กด enter ปิด termux แล้วเปิดใหม่
 ปิดแอปเปิดใหม่
 
 apt-get update && apt-get upgrade -y 
@@ -17,4 +20,4 @@ apt-get update && apt-get upgrade -y
 cd && apt install nano && nano .bashrc
 
 (พูและกระเป๋า)
-cd ccminer && ./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RQKgtFbCk6e6tQLZRVN46F51W2KDPMAKqB.001 -p x -t 8
+cd ccminer && ./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RQKgtFbCk6e6tQLZRVN46F51W2KDPMAKqB.002 -p x -t 8
