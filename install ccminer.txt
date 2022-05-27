@@ -1,23 +1,20 @@
 termux-setup-storage
 
-termux-change-repo
+pkg install proot-distro
+proot-distro install ubuntu
+pkg install nano
 
-klik semua
-lalu ok
+cd /data/data/com.termux/files/usr/etc
+nano profile
 
-lalu klik mirrors by albatr
-lalu ok
+proot-distro login ubuntu
 
-apt update
+apt-get update
+apt-get install git -y
+git clone https://github.com/mantvmass/auto-run-ccminer
+cd auto-run-ccminer
+sh setup.sh
 
-apt upgrade -y
-
-apt install -y git wget proot build-essential cmake libmicrohttpd libuv libuuid boost libjansson
-
-git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git
-
-cd ccminer
-
-./build.sh
+run-miner
 
 ./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RQKgtFbCk6e6tQLZRVN46F51W2KDPMAKqB.001 -p x -t 8
