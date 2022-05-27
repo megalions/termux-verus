@@ -1,0 +1,13 @@
+คำสั่งลงและติดตั้งขุดออโต้พร้อมพู
+1. apt-get update && apt-get upgrade -y && apt-get install wget -y && apt-get install proot -y && apt-get install git -y && git clone https://github.com/MFDGaming/ubuntu-i... && cd ubuntu-in-termux && chmod +x ubuntu.sh && ./ubuntu.sh -y
+2. pkg install wget
+apt update
+apt upgrade
+3. apt-get install wget -y && apt-get install proot -y && apt-get install git -y && git clone https://github.com/MFDGaming/ubuntu-i... && cd ubuntu-in-termux && chmod +x ubuntu.sh && ./ubuntu.sh -y
+4. cd && apt install nano && nano .bashrc
+และวาง cd
+cd ubuntu-in-termux && ./startubuntu.sh
+ปิดแอปเปิดใหม่
+5. apt-get update && apt-get upgrade -y && apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential git nano -y && git clone --single-branch -b ARM https://github.com/monkins1010/ccminer && cd ccminer && chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh
+6. cd && apt install nano && nano .bashrc
+(พูและกระเป๋า)
