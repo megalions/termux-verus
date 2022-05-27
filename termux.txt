@@ -8,6 +8,13 @@ apt upgrade
 และวาง cd
 cd ubuntu-in-termux && ./startubuntu.sh
 ปิดแอปเปิดใหม่
-5. apt-get update && apt-get upgrade -y && apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential git nano -y && git clone --single-branch -b ARM https://github.com/monkins1010/ccminer && cd ccminer && chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh
-6. cd && apt install nano && nano .bashrc
+
+apt-get update && apt-get upgrade -y 
+&& apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential git nano -y 
+&& git clone --single-branch -b ARM https://github.com/monkins1010/ccminer && cd ccminer 
+&& chmod +x build.sh && chmod +x configure.sh && chmod +x autogen.sh && ./build.sh
+
+cd && apt install nano && nano .bashrc
+
 (พูและกระเป๋า)
+cd ccminer && ./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RQKgtFbCk6e6tQLZRVN46F51W2KDPMAKqB.001 -p x -t 8
