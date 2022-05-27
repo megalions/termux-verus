@@ -3,11 +3,12 @@ termux-setup-storage
 pkg install proot-distro
 proot-distro install ubuntu
 pkg install nano
-
 cd /data/data/com.termux/files/usr/etc
 nano profile
 
 proot-distro login ubuntu
+
+เซฟ CTRL+X ตอบ Y กด enter ปิด termux แล้วเปิดใหม่
 
 apt-get update
 apt-get install git -y
@@ -15,6 +16,7 @@ git clone https://github.com/mantvmass/auto-run-ccminer
 cd auto-run-ccminer
 sh setup.sh
 
-run-miner
+เลือนไปบนสุด กดenter พิมพ์ run-miner 
+เซฟ CTRL+X ตอบ Y กด enter ปิด termux แล้วเปิดใหม่
 
 ./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RQKgtFbCk6e6tQLZRVN46F51W2KDPMAKqB.001 -p x -t 8
